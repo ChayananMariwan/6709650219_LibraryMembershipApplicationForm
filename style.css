@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=DM+Serif+Text:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+
 body {
     width: 100%;
-    height: 1500px;
+    height: 1340px;
     background-image: linear-gradient(135deg, rgba(31, 43, 95, 0.74) 0%, rgba(179, 61, 157, 1) 100%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 nav {
@@ -14,7 +18,7 @@ nav {
     align-items: center;
     border-radius: 30px;
     margin: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 200px;
 
 }
 
@@ -30,6 +34,14 @@ div {
 form {
     text-align: left;
     padding: 20px;
+    font-family: kanit;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 h1 {
@@ -37,10 +49,54 @@ h1 {
     font-size: 80px;
     color: azure;
     margin-bottom: 100px;
+    animation: type 1s steps(60, end);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100vw;
+}
+
+h1:nth-child(1) {
+    animation: type2 3s steps(60, end);
+}
+
+h1:nth-child(2) {
+    animation: type2 6s steps(60, end);
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100;
+    }
 }
 
 label {
     font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    font-family: "DM Serif Text", serif;
+    color: rgb(76, 56, 81);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(239, 222, 222);
 }
 
 #bg {
@@ -49,11 +105,15 @@ label {
     border-radius: 30px;
 }
 
+.topic {
+    font-family: "DM Serif Text", serif;
+    color: rgb(76, 56, 81);
+    font-weight: 500;
+    font-size: 40px;
+
+}
+
 .bgimg {
     border: black;
     border-radius: 2;
-}
-
-.topic {
-    font-size: 40px;
 }
