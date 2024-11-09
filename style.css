@@ -1,0 +1,54 @@
+body {
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(135deg, rgba(31, 43, 95, 0.74) 0%, rgba(179, 61, 157, 1) 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 90%;
+    height: 500px;
+    background-color: rgb(239, 222, 222);
+    align-items: center;
+    border-radius: 30px;
+    margin: 50px;
+
+}
+
+div {
+    width: 40%;
+    height: 500px;
+    float: left;
+    margin-right: 40px;
+    border-radius: 30px;
+    background-color: aquamarine;
+}
+
+form {
+    text-align: left;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: azure;
+    margin-bottom: 100px;
+}
+
+#bg {
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.bgimg {
+    border: black;
+    border-radius: 2;
+}
+
+.topic {
+    font-size: 20px;
+}
